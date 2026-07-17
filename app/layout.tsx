@@ -15,10 +15,25 @@ const instrumentSans = Instrument_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
+const siteTitle = "Threads For Tomorrow";
+const siteDescription =
+  "Threads For Tomorrow empowers young people through sustainability projects, environmental education, community events, and local leadership.";
+
 export const metadata: Metadata = {
-  title: "Threads For Tomorrow | Youth-led. Community-driven.",
-  description:
-    "Threads For Tomorrow empowers young people through sustainability projects, environmental education, community events, and local leadership. Growing a greener tomorrow.",
+  metadataBase: new URL("https://threads4tmrw.org"),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "https://threads4tmrw.org",
+    siteName: siteTitle,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+  },
 };
 
 export default function RootLayout({

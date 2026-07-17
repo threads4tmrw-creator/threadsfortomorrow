@@ -64,12 +64,11 @@ export default function Newsletter() {
             </Floating>
 
             <h2 className="relative font-heading text-4xl sm:text-5xl text-forest-dark">
-              Stay in the Loop
+              Our Monthly Newsletter
             </h2>
             <p className="relative font-body text-forest-dark/65 mt-4 max-w-md mx-auto">
-              Our monthly newsletter — climate awareness, sustainability
-              tips, upcoming events, and chapter news, straight to your
-              inbox.
+              Climate awareness, sustainability tips, upcoming events, and
+              chapter news, straight to your inbox.
             </p>
 
             {status !== "submitted" ? (
