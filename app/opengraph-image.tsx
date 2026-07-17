@@ -27,22 +27,10 @@ export default function OgImage() {
         <img
           src={`data:image/png;base64,${lotus}`}
           alt=""
-          width={340}
-          height={450}
+          width={480}
+          height={634}
           style={{ objectFit: "contain" }}
         />
-        <div
-          style={{
-            marginTop: 12,
-            fontSize: 72,
-            fontWeight: 600,
-            color: "#3A5140",
-            letterSpacing: -1,
-            display: "flex",
-          }}
-        >
-          Threads For Tomorrow
-        </div>
       </div>
     ),
     { ...size }
