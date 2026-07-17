@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #faf8f3;
+  --color-warm-white: #fdfcf9;
+  --color-sage: #7a9a7e;
+  --color-sage-light: #a8c2ab;
+  --color-forest: #4f6b56;
+  --color-forest-dark: #3a5140;
+
+  --color-dusty-pink: #e8b4b8;
+  --color-soft-olive: #a8a66a;
+  --color-terracotta: #c97b5f;
+  --color-butter: #f3d576;
+
+  --shadow-soft: 0 8px 30px -8px rgba(79, 107, 86, 0.18);
+  --shadow-soft-lg: 0 20px 60px -15px rgba(79, 107, 86, 0.25);
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-warm-white: var(--color-warm-white);
+  --color-sage: var(--color-sage);
+  --color-sage-light: var(--color-sage-light);
+  --color-forest: var(--color-forest);
+  --color-forest-dark: var(--color-forest-dark);
+
+  --color-dusty-pink: var(--color-dusty-pink);
+  --color-soft-olive: var(--color-soft-olive);
+  --color-terracotta: var(--color-terracotta);
+  --color-butter: var(--color-butter);
+
+  --font-heading: var(--font-heading), "Cormorant Garamond", serif;
+  --font-body: var(--font-body), "Instrument Sans", sans-serif;
+
+  --shadow-soft: var(--shadow-soft);
+  --shadow-soft-lg: var(--shadow-soft-lg);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-sparkle: sparkle 3.5s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+    50% { transform: translateY(-14px) rotate(var(--rot, 0deg)); }
+  }
+  @keyframes sparkle {
+    0%, 100% { opacity: 0.35; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1.15); }
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-forest-dark);
+  font-family: var(--font-body), "Instrument Sans", sans-serif;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(122, 154, 126, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(232, 180, 184, 0.08), transparent);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), "Cormorant Garamond", serif;
+}
+
+/* paper-like grain texture overlay */
+.paper-texture {
+  position: relative;
+}
+.paper-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::selection {
+  background-color: var(--color-dusty-pink);
+  color: var(--color-forest-dark);
+}
