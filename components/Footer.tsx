@@ -82,11 +82,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-warm-white/10">
-          <p className="text-center font-body text-sm text-warm-white/55">
-            Made with love
-          </p>
-        </div>
+        <div className="mt-10 pt-8 border-t border-warm-white/10" />
       </div>
     </footer>
   );
