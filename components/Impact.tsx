@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import SectionHeading from "@/components/ui/SectionHeading";
 import FadeIn from "@/components/ui/FadeIn";
 import { Floating } from "@/components/decorative/Scattered";
 import Sticker from "@/components/decorative/Sticker";
@@ -23,11 +22,9 @@ export default function Impact() {
               className="w-full h-auto"
             />
           </Floating>
-          <SectionHeading
-            eyebrow="What We Do"
-            title="Small Actions, Rooted Together"
-            description="Four simple ways we bring young people into climate action — hands in the dirt, hearts in the community."
-          />
+          <p className="font-body text-xs sm:text-sm uppercase tracking-[0.25em] text-sage font-semibold text-center">
+            What We Do
+          </p>
         </FadeIn>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 mt-16">
@@ -36,14 +33,11 @@ export default function Impact() {
               <motion.div
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                className="h-full rounded-[2rem] bg-warm-white border border-forest/8 shadow-soft hover:shadow-soft-lg px-7 py-9 flex flex-col items-start gap-4 transition-shadow duration-300"
+                className="h-full rounded-[2rem] bg-gradient-to-br from-dusty-pink/30 via-terracotta/15 to-butter/25 border border-dusty-pink/20 shadow-soft hover:shadow-soft-lg px-7 py-10 flex items-center justify-center text-center transition-shadow duration-300"
               >
-                <h3 className="font-heading text-2xl text-forest-dark">
+                <h3 className="font-heading text-2xl sm:text-3xl text-forest-dark">
                   {item.title}
                 </h3>
-                <p className="font-body text-sm sm:text-base text-forest-dark/65 leading-relaxed">
-                  {item.description}
-                </p>
               </motion.div>
             </FadeIn>
           ))}

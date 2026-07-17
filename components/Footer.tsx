@@ -11,10 +11,6 @@ export default function Footer() {
             <p className="font-heading text-2xl sm:text-3xl text-warm-white">
               Threads For Tomorrow
             </p>
-            <p className="font-body text-sm text-warm-white/60 mt-3 max-w-xs leading-relaxed">
-              Youth-led. Community-driven. Growing a greener tomorrow, one
-              thread at a time.
-            </p>
             <div className="flex items-center gap-4 mt-6 text-warm-white/80">
               <a
                 href={SOCIAL_LINKS.instagram}
@@ -62,6 +58,11 @@ export default function Footer() {
                   Events
                 </Link>
               </li>
+              <li>
+                <Link href="#volunteer" className="hover:text-butter transition-colors">
+                  Volunteer
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -83,7 +84,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-8 border-t border-warm-white/10">
           <p className="text-center font-body text-sm text-warm-white/55">
-            Made with love for a greener tomorrow
+            Made with love
           </p>
         </div>
       </div>

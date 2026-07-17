@@ -114,6 +114,11 @@ export default function Newsletter() {
                 {errorMessage}
               </p>
             )}
+
+            <p className="relative font-body text-sm text-forest-dark/50 mt-4 italic">
+              Newsletters start going out in August — sign up now so you
+              don&rsquo;t miss the first one!
+            </p>
           </div>
         </FadeIn>
       </div>

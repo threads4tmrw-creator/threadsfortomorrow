@@ -30,13 +30,9 @@ export default function About() {
 
         <FadeIn delay={0.1} className="order-1 lg:order-2">
           <p className="font-body text-xs sm:text-sm uppercase tracking-[0.25em] text-sage font-semibold mb-4">
-            Our Story
+            Mission
           </p>
-          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl text-forest-dark leading-[1.1] text-balance">
-            We&rsquo;re building a generation that turns small actions into
-            lasting impact.
-          </h2>
-          <p className="font-body text-base sm:text-lg text-forest-dark/70 leading-relaxed max-w-xl mt-8">
+          <p className="font-body text-lg sm:text-xl text-forest-dark/70 leading-relaxed max-w-xl">
             Threads For Tomorrow empowers young people through sustainability
             projects, environmental education, community events, and local
             leadership.

@@ -20,11 +20,7 @@ export default function Events() {
           >
             <Sticker src="/stickers/turtle.png" alt="Watercolor sea turtle" className="w-full h-auto" />
           </Floating>
-          <SectionHeading
-            eyebrow="Join Us"
-            title="Upcoming Events"
-            description="Come as you are — every event is a chance to meet your community and get your hands a little dirty for a good cause."
-          />
+          <SectionHeading eyebrow="Join Us" title="Upcoming Events" />
         </FadeIn>
 
         <Floating

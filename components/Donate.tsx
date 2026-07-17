@@ -46,9 +46,9 @@ export default function Donate() {
             Support Our Mission
           </h2>
           <p className="font-body text-base sm:text-lg text-forest-dark/70 mt-6 leading-relaxed max-w-lg mx-auto">
-            Every gift helps young people plant trees, host cleanups, and lead
-            their communities toward a greener tomorrow. Your generosity keeps
-            our chapters growing.
+            Every gift helps plant trees, host cleanups, and lead communities
+            toward a greener tomorrow. Your generosity keeps our chapters
+            growing.
           </p>
           <div className="mt-10">
             <Button href={DONATE_LINK} variant="solid" external>
